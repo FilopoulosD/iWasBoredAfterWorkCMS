@@ -1,4 +1,4 @@
-# Content Management System (CMS)
+# The I Was Bored After Work CMS
 
 This is a Content Management System (CMS) created as a fun project, to spend my free time. The current goal is to have a Node.js server, a MongoDB database for the backend, and a Python desktop app for writers to add content to each site. 
 
