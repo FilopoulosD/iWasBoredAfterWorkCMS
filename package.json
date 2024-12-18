@@ -7,7 +7,7 @@
     "start": "nodemon server.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "FilopoulosD",
   "license": "ISC",
   "description": "",
   "dependencies": {
