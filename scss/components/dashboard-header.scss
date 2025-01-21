@@ -1,0 +1,73 @@
+@use "../partials/variables" as *;
+@use "../partials/mixins" as *;
+
+.header {
+    background-color: $sidebar-primary-color;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 0.6rem;
+
+    &-container {
+        @include site_size();
+        @include flex(row, center);
+        justify-content: space-around;
+
+        p {
+            font-size: 1.6rem;
+            margin: 0;
+        }
+
+        button {
+            border: none;
+            background-color: beige;
+            color: $font_primary_color;
+            font-family: $Montserrat;
+            border-radius: 1rem;
+            font-weight: 550;
+            padding: 1rem 2rem;
+            font-size: 1.8rem;
+            cursor: pointer;
+        }
+    }
+}
+
+.dashboard {
+    @include flex(row, flex-start);
+    width: 100%;
+
+    &-sidebar {
+        flex: 0.15;
+        background-color: $sidebar-primary-color;
+        color: $secondary_color;
+        padding-top: 20px;
+        font-size: 1.6rem;
+
+        nav ul {
+            list-style-type: none;
+            padding-left: 0rem;
+
+            li {
+                a {
+                    color: $secondary_color;
+                    text-decoration: none;
+                    font-size: 18px;
+                    display: block;
+                    padding: 1rem;
+                    padding-left: 2rem;
+
+                    &:hover {
+                        background-color: $sidebar-secondary-color;
+                    }
+                }
+
+            }
+        }
+    }
+
+    &-content {
+        flex: 0.85;
+        text-align: center;
+        width: 100%;
+    }
+}

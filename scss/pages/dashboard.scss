@@ -1,0 +1,20 @@
+@use "../partials/variables" as *;
+@use "../partials/mixins" as *;
+@use "../components/dashboard-header.scss" as *;
+
+body {
+    font-size: $body_font_size;
+    @include flex(column, center);
+    width: 100%;
+    font-family: $Montserrat;
+    margin: 0;
+}
+
+html {
+    @include body;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 600;
+}
